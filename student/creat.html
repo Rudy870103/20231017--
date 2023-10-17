@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-image: url(../background-night5.jpg);
+            background-position: center;
+        }
         .container {
             width: 50%;
-            height: 260px;
             margin: auto;
-            border: 1px solid black;
+            border: 1px solid rgb(255, 255, 255);
             border-radius: 20px;
             text-align: center;
+            color: white;
             margin-top: 50px;
+            background-color: rgb(255, 255, 255,0.3);
+        }
+        h3{
+            font-size: 30px;
         }
         table,tr,td{
             width: 100%;
@@ -23,10 +31,21 @@
             text-align: center;
         }
         input{
-            margin-top: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: rgb(255, 255, 255,0.3);
         }
         #file{
             margin-left: 140px;
+            background-color: unset;
+        }
+        #submit{
+            width: 100px;
+            height: 30px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255)
         }
     
     </style>
@@ -45,8 +64,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="mobile">Mobile:</label>
-                        <input type="text" name="mobile" id="mobile">
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" id="phone">
                     </td>
                 </tr>
                 <tr>
@@ -56,7 +75,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" name="submit" id="submit">
+                        <input type="submit" name="submit" id="submit" value="Submit">
                     </td>
                 </tr>
             </table>
