@@ -10,31 +10,54 @@
             margin: auto;
             margin-top: 30px;
         }
-        table,tr,td{
+        table,tr,th,td{
             border: 1px solid black;
             border-collapse: collapse;
             text-align: center;
         }
         table{
             width: 100%;
+            margin-top: 5px;
         }
+        tr:nth-child(odd){
+            background: rgb(185, 238, 255);
+        }
+        tr:nth-child(even){
+            background: rgb(255, 255, 255);
+        }
+        #title{
+            background: rgb(174, 174, 174);
+        }
+        .container{
+            text-align: right;
+        }
+        .container a{
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="container">
         <h3>Students List</h3>
+        <a href="./creat.html">Add</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <table>
-            <tr>
-                <td>id</td>
-                <td>name</td>
-                <td>mobile</td>
-                <td>pic</td>
+            <tr id="title">
+                <th>id</th>
+                <th>name</th>
+                <th>mobile</th>
+                <th>pic</th>
             </tr>
             <tr>
                 <td>1</td>
                 <td>amy</td>
                 <td>0911-111-111</td>
-                <td>amy.jpg</td>
+                <td><img src="https://picsum.photos/id/237/100/100" alt="">
+                    <br>
+                    amy.jpg</td>
             </tr>
             <tr>
                 <td>2</td>
